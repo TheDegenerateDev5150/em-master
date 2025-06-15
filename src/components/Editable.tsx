@@ -246,6 +246,7 @@ const Editable = ({
 
     dispatch(
       editThought({
+        cursorOffset: selection.offset() ?? undefined,
         oldValue,
         newValue,
         rankInContext: rank,
